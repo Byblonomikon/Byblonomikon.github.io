@@ -3,132 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Enric Sierra Roig</title>
+    <title>Enric Sierra Roig | Archivist & Metadata Specialist</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        /* ========== Project Card ========== */
-        .project-card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .project-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: auto;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .project-card h3 {
-            font-size: 1.5rem;
-            color: #34495e;
-            margin: 1rem 0;
-            padding: 0 1rem;
-        }
-
-        .project-card p {
-            padding: 0 1rem;
-            color: #7f8c8d;
-        }
-
-        .project-card a {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .project-card a:hover {
-            background-color: #2980b9;
-        }
-
-        /* ========== Filters ========== */
-        .filter-buttons {
-            margin-bottom: 1.5rem;
-        }
-
-        .filter-buttons button {
-            margin-right: 1rem;
-            padding: 0.5rem 1rem;
-            border: none;
-            background-color: #3498db;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .filter-buttons button:hover {
-            background-color: #2980b9;
-        }
-    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Selected Projects</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="projects.html">Projects</a> |
-            <a href="CV_ESierra.pdf" download>Download CV</a>
-        </nav>
-    </header>
+<header>
+    <h1>Enric Sierra Roig</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="projects.html">Projects</a> |
+        <a href="CV_ESierra.pdf" download><i class="fas fa-file-download"></i> Download CV</a>
+    </nav>
+</header>
 
-    <main>
-        <section>
-            <div class="filter-buttons">
-                <button onclick="filterProjects('all')">All</button>
-                <button onclick="filterProjects('government')">Government</button>
-                <button onclick="filterProjects('university')">University</button>
-                <button onclick="filterProjects('conference')">Conference</button>
-                <button onclick="filterProjects('opensource')">Open Source</button>
+<main>
+    <section class="hero">
+        <img src="assets/images/profile.jpg" alt="Enric Sierra Roig" class="profile-pic">
+        <div class="hero-text">
+            <h2>Archivist & Metadata Specialist</h2>
+            <p>I help institutions manage, preserve, and give meaningful access to their digital and physical collections.</p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn primary"><i class="fas fa-folder-open"></i> View Projects</a>
+                <a href="CV_ESierra.pdf" class="btn secondary" download><i class="fas fa-file-pdf"></i> Download CV</a>
+                <a href="mailto:ensierrar@gmail.com" class="btn secondary"><i class="fas fa-envelope"></i> Contact Me</a>
             </div>
-            <div class="project-grid">
-                <div class="project-card" data-type="opensource">
-                    <img src="assets/images/farcast-logo.png" alt="Farcast Network Logo">
-                    <h3>Farcast Network</h3>
-                    <p><strong>Institution:</strong> Open Source Project<br>
-                    <em>An advanced distributed forecasting system for network traffic, designed to improve prediction models in real-time systems.</em></p>
-                    <p><strong>Technologies Used:</strong> Python, TensorFlow, Kafka, Docker, Kubernetes</p>
-                    <div>
-                        <a href="https://github.com/Byblonomikon/Farcast-Network" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
-                        <a href="https://farcastnetwork.demo.com" target="_blank"><i class="fas fa-play-circle"></i> Live Demo</a>
-                    </div>
-                </div>
+        </div>
+    </section>
+</main>
 
-                <!-- Existing Project Cards... -->
-
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Enric Sierra Roig</p>
-    </footer>
-
-    <script>
-        function filterProjects(type) {
-            const cards = document.querySelectorAll('.project-card');
-            cards.forEach(card => {
-                if (type === 'all' || card.dataset.type === type) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-    </script>
+<footer>
+    <p>&copy; 2025 Enric Sierra Roig</p>
+</footer>
 
 </body>
 </html>
