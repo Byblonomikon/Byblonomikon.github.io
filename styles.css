@@ -1,98 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* ========== GENERAL STYLES ========== */
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f2f4f8;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* ========== HEADER & NAVIGATION ========== */
 header {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  border-radius: 8px;
-  margin-bottom: 40px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+    margin: 0 0 0.5rem;
 }
 
-header p {
-  font-size: 1.2rem;
-  opacity: 0.85;
+nav a {
+    color: #ecf0f1;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-/* Contenido principal */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ========== MAIN CONTENT ========== */
 main {
-  max-width: 900px;
-  margin: auto;
+    padding: 2rem;
 }
 
-section {
-  background-color: white;
-  border-radius: 10px;
-  padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+/* ========== FILTER BUTTONS ========== */
+.filter-buttons {
+    margin-bottom: 1.5rem;
 }
 
-section h2 {
-  color: #2c3e50;
-  margin-bottom: 15px;
-  font-size: 1.8rem;
+.filter-buttons button {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
 }
 
-section p, section li {
-  font-size: 1rem;
-  color: #555;
+.filter-buttons button:hover {
+    background-color: #2980b9;
 }
 
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
+/* ========== PROJECT GRID ========== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
 }
 
-/* Enlaces */
-a {
-  color: #2980b9;
-  text-decoration: none;
+.project-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-a:hover {
-  text-decoration: underline;
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Pie de página */
+.project-card h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* ========== FOOTER ========== */
 footer {
-  text-align: center;
-  color: #888;
-  padding: 20px 0;
-  margin-top: 40px;
-  font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  section {
-    padding: 20px;
-  }
-
-  section h2 {
-    font-size: 1.5rem;
-  }
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
