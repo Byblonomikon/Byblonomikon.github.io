@@ -252,4 +252,9 @@ footer {
     width: 160px;
     height: 160px;
   }
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+}
 }
