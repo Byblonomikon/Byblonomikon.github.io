@@ -304,6 +304,34 @@ footer {
     margin-right: 6px;
 }
 
+.project-card h3 {
+  color: var(--accent-color);
+  margin-bottom: 0.3rem;
+}
+
+.project-card em {
+  display: block;
+  margin: 0.5rem 0;
+  color: #777;
+}
+
+.project-card p {
+  margin-bottom: 0.6rem;
+}
+
+.project-card strong {
+  color: var(--primary-color);
+}
+
+.project-links a {
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: var(--accent-color);
+}
+
+
 
 /* ---------- MEDIA QUERIES ---------- */
 @media (max-width: 768px) {
